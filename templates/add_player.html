@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="text" name="name" placeholder="ENTER PLAYER NAME"><br><br>
+  <input type="text" name="country" placeholder="ENTER REPRESENTED COUNTRY"><br><br>
+  <input type="date" name="dob" placeholder="ENTER DATE OF BIRTH"><br><br>
+  <input type="text" name="role" placeholder="ENTER PLAYER ROLE"><br><br>
+  <input type="file" name="img" ><br><br>
+  <input type="submit" value="ADD PLAYER"><br><br>
+</form>
+
+{% endblock %}
